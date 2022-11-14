@@ -303,19 +303,17 @@ line-height: 1.19;
 }
 /* footer */
 .footer {
-background-color: gray;
-/* var(--hero-bg-color) */
+padding-top: 60px;
+padding-bottom: 60px;
+background-color: var(--hero-bg-color);
 }
 .logo-footer{
 display: inline-block;
-margin-top: 60px;
 margin-bottom: 20px;
 }
 .address-nav.list{
     display: flex;
     flex-direction: column;
-margin-top: 20px;
-margin-bottom: 60px;
 }
 
 
