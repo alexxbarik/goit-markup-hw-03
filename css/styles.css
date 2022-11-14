@@ -71,7 +71,10 @@ line-height: 1.2;
 }
 /* header*/
 .header {
-    /* display: flex; */
+    display: flex;
+}
+.container .header-container{
+    display: flex;
 }
 /* Main NAV */
 .main-nav {
@@ -110,7 +113,8 @@ letter-spacing: 0.02em;
 }
 /* auth-nav */
 .auth-nav {
-display: flex;    
+display: flex; 
+align-items: center;  
 }
 .auth-nav .item + .item {
     margin-left: 50px;    
@@ -179,6 +183,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 /* section */
 /* НАШІ ОСОБЛИВОСТІ */
 /* hidden */
+.section-feature {
+    display: flex;
+}
 .visually-hidden {
 position: absolute;
 width: 1px;
@@ -192,58 +199,96 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
-
 .feature-list {
     display: flex;
+    align-items: flex-start;
 } 
 
 .feature-list .item + .item {
     margin-left: 30px;
 }
 
+.feature-list .title {
+margin-top: 0;
+margin-bottom: 10px;
+color:var(--title-text-color) ;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
 
+.feature-list .text {
+margin-top: 0;
+margin-bottom: 0;
+color: var(--primary-text-color);
+font-size: 14px;
+line-height: 1.71;
+}
+
+/* ЧИМ МИ ЗАЙМАЄМОСЬ */
+.section-work{
+display: flex;
+}
+.work-list{
+    display: flex;
+    justify-content: space-between;
+}
+    
+
+/* НАША КОМАНДА */
 .section-team {
     background-color: var(--secondary-bg-color);
 }
+.team-list{
+    display: flex;
+    /* background-color: teal; */
+}
+.team-list .items{
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.team-list .items:nth-child(4n){
+    margin-right: 0;
+}
+
+.team-list .items:nth-last-child(-n+4){
+margin-bottom: 0;
+}
+.team-list .items .item{
+    display: block;
+}
+.container-img-team {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    border-bottom: 1px solid var(--bottom-border-card-color);
+    /* outline: 2px solid tomato;   */
+}
 .section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    color:var(--title-text-color) ;
+margin-top: 0;
+margin-bottom: 50px;
+color:var(--title-text-color) ;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 }
 
-/* features */
-.feature-list .title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color:var(--title-text-color) ;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
-}
 .team-list .title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: var(--title-text-color);
+margin-top: 0;
+margin-bottom: 10px;
+color: var(--title-text-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 }
-.feature-list .text {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--primary-text-color);
-font-size: 14px;
-line-height: 1.71;
-}
+
 .team-list .text {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--primary-text-color);
+margin-top: 0;
+margin-bottom: 0;
+color: var(--primary-text-color);
 font-size: 16px;
 line-height: 1.19;
 }
@@ -274,18 +319,24 @@ line-height: 1.71;
     list-style: none;
 }
 .portfolio-btn {
+    display: flex;
+   justify-content: center;
     margin-bottom: 50px;
+}
+.portfolio-btn .item + .item {
+    margin-left: 8px;    
 }
 /* кнопки */
 .portfolio-btn .button {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 6px 22px;
-    text-align: center;
-    border: 1px solid transparent;
-    color:var(--title-text-color);
-    background-color: var(--secondary-bg-color);
-    font-family: inherit;
+display: inline-block;
+
+border-radius: 4px;
+padding: 6px 22px;
+text-align: center;
+border: 1px solid transparent;
+color:var(--title-text-color);
+background-color: var(--secondary-bg-color);
+font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
@@ -302,10 +353,30 @@ text-align: center;
     cursor: pointer;
 }
 /* наші роботи */
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: teal;
+}
+.portfolio-list .items{
+    width: 380px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.portfolio-list .items:nth-child(3n){
+    margin-right: 0;
+}
+
+.portfolio-list .items:nth-last-child(-n+3){
+margin-bottom: 0;
+}
+.portfolio-list .items .item{
+    display: block;
+}
 .container-img {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 380px;
     border-bottom: 1px solid var(--bottom-border-card-color);
     outline: 2px solid tomato;
    
