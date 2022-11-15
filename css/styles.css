@@ -80,6 +80,7 @@ display: flex;
 }
 .container.header-container{
 display: flex;
+border-bottom: 1px solid #ececec;
 }
 /* Main NAV */
 .main-nav {
@@ -350,7 +351,7 @@ margin-bottom: 50px;
 margin-left: 8px;    
 }
 /* кнопки */
-.portfolio-btn .button {
+.portfolio-btn .buttons {
 display: inline-block;
 
 border-radius: 4px;
@@ -366,13 +367,13 @@ line-height: 1.63;
 letter-spacing: 0.03em;
 text-align: center;
 }
-.portfolio-btn .button:hover,
-.portfolio-btn .button:focus {
+.portfolio-btn .buttons:hover,
+.portfolio-btn .buttons:focus {
 background-color:var(--accent-color);
 color:var(--head-title-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-btn .button {
+.portfolio-btn .buttons {
     cursor: pointer;
 }
 /* наші роботи */
@@ -382,7 +383,7 @@ flex-wrap: wrap;
     /* background-color: teal; */
 }
 .portfolio-list .items{
-width: 370px;
+max-width: 370px;
 margin-right: 30px;
 margin-bottom: 30px;
 }
